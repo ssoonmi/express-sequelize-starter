@@ -14,6 +14,7 @@ This is the backend for the Solo React project.
    * `npm run db:create`
    * `npm run db:migrate`
    * `npm run db:seed:all`
+   * `npm run webpack`
    * `npm start`
 
 ## Deploy to Heroku
