@@ -1,0 +1,46 @@
+{
+  "name": "starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "per-env",
+    "start:development": "nodemon --ignore public/ -r dotenv/config ./bin/www",
+    "start:production": "./bin/www",
+    "webpack": "webpack --mode=development --watch --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "db:create": "dotenv sequelize db:create",
+    "db:migrate": "dotenv sequelize db:migrate",
+    "db:seed:all": "dotenv sequelize db:seed:all"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "express-async-handler": "^1.1.4",
+    "express-validator": "^6.4.1",
+    "helmet": "^3.22.0",
+    "http-errors": "~1.6.3",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "per-env": "^1.0.2",
+    "pg": "^8.0.3",
+    "sequelize": "^5.21.7",
+    "sequelize-cli": "^5.5.1",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^3.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "nodemon": "^2.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.3"
+  }
+}
