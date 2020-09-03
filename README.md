@@ -1,6 +1,6 @@
-# Solo React Project
+# Express Sequelize Backend Project
 
-This is the backend for the Solo React project.
+This is the backend for the Express Sequelize Project.
 
 ## Getting started
 
